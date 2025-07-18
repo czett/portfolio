@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>czett portfolio</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
 <body>
     <div class="navbar">
@@ -13,13 +14,13 @@
         </a>
         <div class="links">
             <a href="#" class="link special-font">about</a>
-            <a href="#" class="link special-font">projects</a>
+            <a href="#projects" class="link special-font">projects</a>
             <a href="#" class="link special-font">skills</a>
             <a href="#" class="link special-font">contact</a>
         </div>
     </div>
 
-    <div class="hero">
+    <div class="hero section">
         <div class="slogan-box">
             <div class="bracket">&lt;</div>
             <div class="slogan">
@@ -29,9 +30,66 @@
             </div>
             <div class="bracket">/&gt;</div>
         </div>
-        
+
         <div class="subtitle">
-            I am a web developer with a passion for clean code and minimalistic design.
+            <p>
+                I am a web developer with a passion for clean code and minimalistic design.
+            </p>
+            <div class="discover-text">
+                discover my projects
+            </div>
+        </div>
+        
+        <div class="section projects" id="projects">
+            <div class="headline">
+                selected projects
+            </div>
+
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="title">go2klo</div>
+                    <div class="description">find nearby public restrooms on an interactive map, rate and add new toilets, read reviews and earn achievements</div>
+                    <div class="tags">
+                        <div class="tag">python</div>
+                        <div class="tag">flask</div>
+                        <div class="tag">supabase</div>
+                        <div class="tag">leaflet</div>
+                    </div>
+                    <a class="link" href="https://go2klo.com" target="_blank">
+                        <div>visit project</div>
+                        <span class="material-symbols-rounded">east</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="title">blueberry</div>
+                    <div class="description">speech‑controlled virtual ai assistant using Ollama’s llama3.2:1b and speech‑to‑text/text‑to‑speech; supports follow‑up questions, weather lookup and timers</div>
+                    <div class="tags">
+                        <div class="tag">python</div>
+                        <div class="tag">ollama</div>
+                        <div class="tag">ai</div>
+                        <div class="tag">speech-to-text</div>
+                    </div>
+                    <a class="link" href="https://github.com/czett/blueberry" target="_blank">
+                        <div>visit project</div>
+                        <span class="material-symbols-rounded">east</span>
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="title">cellular automata</div>
+                    <div class="description">lightweight web tool to generate and visualize elementary cellular automata (Wolfram rules 0–255), with interactive controls and real-time concentration charts for experimenting with evolution patterns</div>
+                    <div class="tags">
+                        <div class="tag">javascript</div>
+                        <div class="tag">chart.js</div>
+                        <div class="tag">wolfram</div>
+                    </div>
+                    <a class="link" href="https://ca-gen.vercel.app/" target="_blank">
+                        <div>visit project</div>
+                        <span class="material-symbols-rounded">east</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
