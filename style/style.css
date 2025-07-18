@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@font-face {
+  font-family: dotfont;
+  src: url(../assets/font/led_counter.ttf);
+}
+
+:root{
+    --basefont: 'Outfit';
+    --bg: #000315;
+    --fg: #EEEEFF;
+    --shadows: rgba(255, 255, 255, 0.5);
+    --lines: rgba(255, 255, 255, 0.05);
+    --lines-secondary: rgba(255, 255, 255, 0.05);
+    --lines-tertiary: rgba(255, 255, 255, 0.15);
+    --rl: 10vw; /* horizontal padding */
+    --ac1: #ed0f31;
+    --ac2: #ed940f;
+    --transition: 400ms;
+}
+
+::selection{
+    background: var(--fg);
+    color: var(--bg);
+}
+
+*{
+    font-family: var(--basefont), sans-serif;
+    color: var(--fg);
+    transition: var(--transition);
+}
+
+.special-font{
+    font-family: 'dotfont';
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body, html{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg);
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--lines) 1px, transparent 1px), linear-gradient(to bottom, var(--lines) 1px, transparent 1px), linear-gradient(to bottom, var(--lines-secondary) 0%, transparent 100%);
+    background-size: 20px 20px, 20px 20px, 100% 100%;
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    position: sticky;
+    inset: 0 auto auto 0;
+    box-sizing: border-box;
+    padding: 2vh var(--rl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .links{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .links a.link{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.navbar .links a.link:hover{
+    text-shadow: var(--shadows) 0 0 20px;
+}
+
+.hero{
+    width: 100vw;
+    padding: 6vh var(--rl);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+}
+
+.hero .slogan-box{
+    display: flex;
+    justify-content: center;
+    gap: calc(0.2*var(--rl));
+    align-items: center;
+}
+
+.hero .bracket{
+    color: var(--lines-tertiary);
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.hero .slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 2vh; */
+}
+
+.hero .slogan .word{
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: dotfont;
+    transition: 2s !important;
+    transition-timing-function: ease;
+    cursor: pointer;
+    color: var(--fg);
+}
+
+.hero .slogan .word:hover{
+    background: linear-gradient(45deg, var(--ac1), var(--ac2));
+    background-clip: text;
+    color: transparent;
+}
