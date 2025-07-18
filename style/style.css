@@ -159,6 +159,10 @@ body, .navbar {
     color: transparent;
 }
 
+.subtitle{
+    text-align: center;
+}
+
 .hero .subtitle p{
     font-size: 1.25rem;
     opacity: 0.6;
@@ -171,6 +175,8 @@ body, .navbar {
     text-align: center;
     color: var(--fg);
     font-size: 1.15rem;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -297,4 +303,69 @@ div.text{
 .about-terminal .terminal-text, .about-terminal .terminal-text span{
     font-family: 'Fira Code', monospace;
     line-height: 200%;
+}
+
+@media (width < 1000px){
+    :root{
+        --rl: 5vw;
+    }
+
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .slogan-box{
+        gap: 3vh !important;
+    }
+
+    .hero .slogan .word{
+        font-size: 4rem;
+    }
+    
+    .hero .bracket{
+        font-size: 4rem;
+    }
+
+    .section{
+        flex-direction: column;
+        width: 100%;
+        padding: 2vh var(--rl) !important;
+        box-sizing: border-box;
+    }
+
+    .about-box{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 var(--rl);
+    }
+
+    .section .headline{
+        text-align: center;
+    }
+
+    .about-box .about-text{
+        text-align: center;
+    }
+
+    .about-box .about-text, .about-box .about-terminal{
+        width: 100%;
+    }
+    
+    .project-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-list{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text{
+        text-align: center;
+    }
 }
