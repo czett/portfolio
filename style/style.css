@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Outfit:wght@100..900&display=swap');
 @font-face {
   font-family: dotfont;
   src: url(../assets/font/led_counter.ttf);
@@ -267,4 +267,34 @@ div.text{
 
 .email a{
     text-decoration: none;
+}
+
+.about-box{
+    display: flex;
+    justify-content: start;
+    gap: 10vh;
+    align-items: center;
+}
+
+.about-box .about-text{
+    color: var(--shadows);
+    font-size: 1.2rem;
+    line-height: 175%;
+    width: 50%;
+}
+
+.about-box .about-terminal{
+    font-size: 1rem;
+    background: var(--lines);
+    border: 1px solid var(--shadows);
+    width: 35%;
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: .75rem;
+    cursor: pointer;
+}
+
+.about-terminal .terminal-text, .about-terminal .terminal-text span{
+    font-family: 'Fira Code', monospace;
+    line-height: 200%;
 }
