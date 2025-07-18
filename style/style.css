@@ -13,8 +13,8 @@
     --lines-secondary: rgba(255, 255, 255, 0.05);
     --lines-tertiary: rgba(255, 255, 255, 0.15);
     --rl: 10vw; /* horizontal padding */
-    --ac1: #ed0f31;
-    --ac2: #ed940f;
+    --ac1: #0fed30;
+    --ac2: #1e0fed;
     --transition: 400ms;
 }
 
@@ -27,6 +27,7 @@
     font-family: var(--basefont), sans-serif;
     color: var(--fg);
     transition: var(--transition);
+    scroll-behavior: smooth;
 }
 
 .special-font{
@@ -71,6 +72,7 @@ body, .navbar {
         linear-gradient(to bottom, var(--lines) 1px, transparent 1px);
     background-size: 20px 20px;
     background-color: var(--bg);
+    z-index: 10;
 }
 
 
@@ -226,4 +228,43 @@ body, .navbar {
 
 .project-cards .project-card .link span{
     font-size: 1rem !important;
+}
+
+.skills-list{
+    display: flex;
+    max-width: 80%;
+    gap: 2vh;
+}
+
+.skills-list .skill{
+    padding: 1vh 2vh;
+    border-radius: .4rem;
+    background: var(--lines-tertiary);
+    cursor: pointer;
+}
+
+.copyright{
+    color: var(--shadows);
+    font-size: .8rem;
+}
+
+div.text{
+    font-size: 1.3rem;
+}
+
+.contact-options .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1ch;
+    padding: 1.5vh 3vh;
+    border-radius: .5rem;
+}
+
+.email:hover{
+    background: var(--lines-tertiary);
+}
+
+.email a{
+    text-decoration: none;
 }
